@@ -15,7 +15,7 @@ This keystroke can be configured in `Preferences > Keymap > Plug-ins > 42 Header
 You can configure the header (since the default header is the header of 42lyon.fr), author and email in `Preferences > Tools > 42 Header`
 ![visualisation of the config of the plugin](.github/configuration.png)
 
-If you are lazy once you modify something you can re-apply all headers to the files that have already an header by cling on the `Update all headers`
+You can set the header defined in the configuration to all of your files by clicking on the `Update all headers`
 
 
 
