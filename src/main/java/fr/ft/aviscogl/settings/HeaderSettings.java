@@ -71,13 +71,10 @@ public class HeaderSettings implements SearchableConfigurable
         if (settings == null) {
             return false;
         }
-        boolean isModified = !(settings.email.getText().equals(originEmail) &&
+
+        return !(settings.email.getText().equals(originEmail) &&
                 settings.author.getText().equals(originAuthor) &&
                 settings.header.getText().equals(originHeader));
-
-        settings.updateAllHeaders.setEnabled(isModified);
-
-        return isModified;
     }
 
     @Override
