@@ -1,7 +1,7 @@
 ### 42 Header
 
 To install this jetbrain plugin you have two ways:
-1. Download the .jar from [this link](github.com/alexisvisco/42header) and go to `Preferences > Plugins` and
+1. Download the .zip from [this link](https://github.com/alexisvisco/42header/releases) and go to `Preferences > Plugins` and
 ![how to install the plugin manually](.github/how-to-install-manually.png)
 2. Search in the marketplace a plugin called 42 Header and install it.
 
