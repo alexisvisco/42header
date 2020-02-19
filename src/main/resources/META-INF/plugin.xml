@@ -1,0 +1,25 @@
+<idea-plugin>
+    <id>fr.ft.aviscogl</id>
+    <name>42 Header</name>
+    <idea-version since-build="193"/>
+    <vendor email="alexis.viscogliosi@outlook.fr" url="42.fr">42</vendor>
+    <description>Change header of your project at 42. Default shortcut is alt + h</description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <applicationListeners>
+        <listener class="fr.ft.aviscogl.event.OnSave" topic="com.intellij.openapi.vfs.newvfs.BulkFileListener"/>
+    </applicationListeners>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationConfigurable groupId="tools" displayName="42 Header" id="preferences.42Header" instance="fr.ft.aviscogl.settings.HeaderSettings" />
+    </extensions>
+
+    <actions>
+        <action id="42lyon.event.keystroke" class="fr.ft.aviscogl.event.OnKeystroke"
+                text="Generate Header on Top of Files">
+            <add-to-group group-id="EditorActions" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt H"/>
+        </action>
+    </actions>
+</idea-plugin>
